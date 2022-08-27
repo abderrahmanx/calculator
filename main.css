@@ -1,0 +1,385 @@
+@import url('https://fonts.google.com/specimen/Spartan');
+*{
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+
+}
+
+
+
+body{
+    background-color: hsl(222, 26%, 31%);
+}
+.calculator{
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: hsl(222, 26%, 31%);
+height: 80vh;
+}
+.btns{
+display: grid;
+
+padding: 30px;
+border-radius:30px ;
+grid-template-columns:repeat(4,110px);
+grid-template-rows: repeat(5,70px);
+margin-top: 0px;
+background-color:  hsl(223, 31%, 20%)
+}
+.del{
+    background-color: hsl(225, 21%, 49%);
+    box-shadow: hsl(224, 28%, 35%) inset 0px -5px 0px 0px;
+    outline: none;
+    border: none;
+    margin: 7px;
+    border-radius: 10px;
+
+    color: white;
+}
+.number{
+  outline: none;
+  border: none;
+  margin: 7px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: rgb(190, 190, 190) inset 0px -5px 0px 0px;
+  color:hsl(198, 20%, 13%);
+    }
+    .operation{
+        outline: none;
+        border: none;
+        margin: 7px;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 1);
+        box-shadow: rgb(190, 190, 190) inset 0px -5px 0px 0px;
+        color:hsl(198, 20%, 13%);
+          }
+button{
+font-size: 1.5em;
+color:hsl(198, 20%, 13%);
+font-weight:700;
+}
+    button:hover{
+cursor: pointer;
+opacity: .8;
+
+    }
+#reset{
+    background-color: hsl(225, 21%, 49%);
+    box-shadow: hsl(224, 28%, 35%) inset 0px -5px 0px 0px;
+    outline: none;
+    border: none;
+    margin: 7px;
+    border-radius: 10px;
+grid-column: span 2;
+
+color: white;
+}
+.equal{
+    outline: none;
+    border: none;
+    margin: 7px;
+    border-radius: 10px;
+    background-color: hsl(6, 63%, 50%);
+    box-shadow: hsl(6, 70%, 34%) inset 0px -5px 0px 0px;
+    grid-column: span 2;
+  
+    color: white;
+}
+.display{
+display: flex;
+flex-direction: column;
+border-radius: 20px;
+    position: absolute;
+    padding: 30px;
+    background-color: hsl(224, 36%, 15%);
+    color: white;
+padding-top: 10PX;
+    transform: translateY(-280px);
+    width:500px;
+    text-align: right;
+    padding-bottom: 15px;
+    min-height: 120px;
+}
+.current{
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size:3em;
+}
+#result{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2em;
+    text-align: left;
+   
+}
+.title{
+    background-color: hsl(222, 26%, 31%);
+color: white;
+display: flex;
+justify-content: center;
+margin-top: 100px;
+margin-bottom: 0px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.main-head{
+margin-top: 30px;
+margin-right: -150px;
+margin-left: 10px;
+transform: translateX(-180px);
+}
+.them{
+    display: flex;
+flex-direction: row;
+transform: translateX(180px);
+}
+.themes-num{
+display: flex;
+margin-left: 20px;
+
+}
+.themes-num p{
+  padding: 15px;
+    padding-top: 0;
+    }
+    .them h4{
+        padding: 15px;
+padding-top: 40px;
+font-size: 1.2em;
+    }
+    .themes{
+        margin-top: 7px;
+        margin-left: -10px;
+    }
+    #dot1{
+        background-color: red;
+        width: 20px;
+height:20px;
+border-radius: 20px;
+
+margin-right: 10px;
+margin-top: 2px;
+    }
+    #dot2{
+        background-color: red;
+        width: 20px;
+height:20px;
+border-radius: 20px;
+
+margin-right: 10px;
+margin-top: 2px;
+    }
+    #dot3{
+        background-color: red;
+        width: 20px;
+height:20px;
+border-radius: 20px;
+
+margin-right: 10px;
+margin-top: 2px;
+    }
+    body.theme2{
+        
+        background-color: hsl(0, 0%, 93%);
+        
+        }
+        .btns.theme2{
+        
+        background-color:  hsl(0, 1%, 81%)
+        }
+        .del.theme2{
+            background-color: hsl(185, 42%, 37%);
+            box-shadow: hsl(185, 58%, 25%) inset 0px -5px 0px 0px;
+            outline: none;
+            border: none;
+            margin: 7px;
+            border-radius: 10px;
+            color: white;
+        }
+        
+       
+    
+        #reset.theme2{
+            background-color: hsl(185, 42%, 37%);
+            box-shadow: hsl(185, 58%, 25%) inset 0px -5px 0px 0px;
+            outline: none;
+            border: none;
+            margin: 7px;
+            border-radius: 10px;
+        grid-column: span 2;
+        
+        color: white;
+        }
+        .equal.theme2{
+            outline: none;
+            border: none;
+            margin: 7px;
+            border-radius: 10px;
+            background-color: hsl(25, 98%, 40%);
+            box-shadow: hsl(25, 99%, 27%) inset 0px -5px 0px 0px;
+            grid-column: span 2;
+          
+            color: white;
+        }
+        .display.theme2{
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+            position: absolute;
+            padding: 30px;
+            background-color: white;
+            color: black;
+        padding-top: 10PX;
+            transform: translateY(-280px);
+            width:500px;
+            text-align: right;
+            padding-bottom: 15px;
+            min-height: 120px;
+        }
+        .current.theme2{
+            color: black;
+        font-size:3em;
+        }
+        #result.theme2{
+
+            color: black;
+        }
+        #dot2:hover{
+cursor: pointer;
+        }
+        .calculator.theme2{
+            background-color: hsl(0, 0%, 93%);
+        }
+        .title.theme2{
+            background-color: hsl(0, 0%, 93%);
+            color: black;
+        }
+        .themepad.theme2{
+            background-color:  hsl(0, 1%, 81%)
+        }
+        .themepad{
+            background-color: white;width: 100px;height: 25px;
+            margin-left: 30px;border-radius: 10px;
+            display: flex;justify-content: space-around; background-color:  hsl(223, 31%, 20%);
+        }
+        body.theme3{
+        
+            background-color: hsl(268, 75%, 9%);
+            
+            }
+            .btns.theme3{
+            
+            background-color:  hsl(268, 71%, 12%)
+            }
+            .del.theme3{
+                background-color: hsl(281, 89%, 26%);
+                box-shadow: hsl(285, 91%, 52%) inset 0px -5px 0px 0px;
+                outline: none;
+                border: none;
+                margin: 7px;
+                border-radius: 10px;
+                color: white;
+            }
+            
+           
+        
+            #reset.theme3{
+                background-color: hsl(281, 89%, 26%);
+                box-shadow: hsl(285, 91%, 52%) inset 0px -5px 0px 0px;
+                outline: none;
+                border: none;
+                margin: 7px;
+                border-radius: 10px;
+            grid-column: span 2;
+            
+            color: white;
+            }
+            .equal.theme3{
+                outline: none;
+                border: none;
+                margin: 7px;
+                border-radius: 10px;
+                background-color: hsl(176, 100%, 44%);
+                box-shadow: hsl(177, 92%, 70%) inset 0px -5px 0px 0px;
+                grid-column: span 2;
+              
+                color: black;
+            }
+            .display.theme3{
+            display: flex;
+            flex-direction: column;
+            border-radius: 20px;
+                position: absolute;
+                padding: 30px;
+                background-color: hsl(268, 71%, 12%);
+                color: hsl(52, 100%, 62%);
+            padding-top: 10PX;
+                transform: translateY(-280px);
+                width:500px;
+                text-align: right;
+                padding-bottom: 15px;
+                min-height: 120px;
+            }
+            .current.theme3{
+                color: hsl(52, 100%, 62%);
+            font-size:3em;
+            }
+            #result.theme3{
+    
+                color: hsl(52, 100%, 62%);
+            }
+            #dot2:hover{
+    cursor: pointer;
+            }
+            .calculator.theme3{
+                background-color: hsl(268, 75%, 9%);
+            }
+            .title.theme3{
+                background-color: hsl(268, 75%, 9%);
+                color: hsl(52, 100%, 62%);
+            }
+            .themepad.theme3{
+                background-color:  hsl(268, 71%, 12%)
+            }
+            #dot3{
+                background-color:hsl(176, 100%, 44%) ;
+                opacity: 0;
+            }
+            #dot3:hover{
+                cursor: pointer;
+            }
+            #dot2{
+                background-color:hsl(25, 98%, 40%) ;
+                opacity: 0;
+            }
+            #dot1:hover{
+                cursor: pointer;
+            }
+          
+          
+            @media (max-width:600px) 
+            {     
+            
+            
+.btns{
+    grid-template-rows: repeat(5,90px); 
+    grid-template-columns: repeat(4,80px); 
+    margin-top: 100px;
+}
+.display{
+    width: 380px;
+}
+.display.theme2{
+    width: 380px;
+}
+.display.theme3{
+    width: 380px;
+}
+.main-head{
+transform: translateX(-120px);
+}
+.them{
+    transform: translateX(120px);
+}
+            }
